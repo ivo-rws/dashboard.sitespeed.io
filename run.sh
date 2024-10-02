@@ -2,12 +2,12 @@
 
 # We use the autobuild to always test our new functionality. But YOU should not do that!
 # Instead use the latest tagged version as the next row
-# DOCKER_CONTAINER=sitespeedio/sitespeed.io:25.5.1
+DOCKER_CONTAINER=sitespeedio/sitespeed.io:35.0.0
 
-DOCKER_CONTAINER=sitespeedio/sitespeed.io-autobuild:main
+#DOCKER_CONTAINER=sitespeedio/sitespeed.io-autobuild:main
 DOCKER_SETUP="--cap-add=NET_ADMIN  --shm-size=4g --rm -v /config:/config -v "$(pwd)":/sitespeed.io -v /etc/localtime:/etc/localtime:ro -e MAX_OLD_SPACE_SIZE=3072 --name sitespeedio"
-DESKTOP_BROWSERS_DOCKER=(chrome firefox)
-DESKTOP_BROWSERS=(chrome firefox edge)
+DESKTOP_BROWSERS_DOCKER=(chrome)
+DESKTOP_BROWSERS=(chrome )
 EMULATED_MOBILE_BROWSERS=(chrome)
 
 # We loop through the desktop directory

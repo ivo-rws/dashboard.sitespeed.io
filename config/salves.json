@@ -1,0 +1,10 @@
+{
+  "extends": "./config/desktop.json",
+  "browsertime": {
+    "iterations": 3,
+    "flushDNS": true,
+    "xvfb": true
+  },
+  "slug": "Salves"
+}
+
